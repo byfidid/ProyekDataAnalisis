@@ -29,7 +29,10 @@ min_date = d1["order_purchase_timestamp"].min()
 max_date = d1["order_purchase_timestamp"].max()
 
 with st.sidebar:
-    st.image("https://raw.githubusercontent.com/byfidid/ProyekDataAnalisis/main/IMG_20221106_172529.png")
+    st.image(
+        "https://raw.githubusercontent.com/byfidid/ProyekDataAnalisis/main/IMG_20221106_172529.png",
+        caption="Fidya Faras."
+    )
     
 st.title('Submission Memulai Pemrograman Data dengan Python')
 st.header('Proyek Analisis Data :bear:')
