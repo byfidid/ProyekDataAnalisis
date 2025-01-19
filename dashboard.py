@@ -29,7 +29,7 @@ min_date = d1["order_purchase_timestamp"].min()
 max_date = d1["order_purchase_timestamp"].max()
 
 with st.sidebar:
-    st.image("https://github.com/byfidid/ProyekDataAnalisis/blob/main/IMG_20221106_172529.png")
+    st.image("https://github.com/dicodingacademy/assets/blob/main/logo.png")
     
 st.title('Submission Memulai Pemrograman Data dengan Python')
 st.header('Proyek Analisis Data :bear:')
@@ -69,7 +69,8 @@ colors_ = ["#8A2F19", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 sns.barplot(
     y="customer_count",
     x="payment_type",
-    data=bypayment_df.sort_values(by="customer_count", ascending=False)
+    data=bypayment_df.sort_values(by="customer_count", ascending=False),
+    palette=colors_
 )
 ax.set_title("Metode pembayaran yang paling banyak digunakan", loc="center", fontsize=15)
 ax.set_ylabel(None)
