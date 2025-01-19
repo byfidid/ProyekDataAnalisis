@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 import streamlit as st
 from babel.numbers import format_currency
-sns.set(style='dark')
+sns.set(style='light')
 
 customers_df = pd.read_csv("customers_dataset.csv")
 order_items_df = pd.read_csv("order_items_dataset.csv")
@@ -29,7 +29,7 @@ min_date = d1["order_purchase_timestamp"].min()
 max_date = d1["order_purchase_timestamp"].max()
 
 with st.sidebar:
-    st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
+    st.image("https://github.com/byfidid/ProyekDataAnalisis/blob/main/IMG_20221106_172529.jpg")
     
 st.title('Submission Memulai Pemrograman Data dengan Python')
 st.header('Proyek Analisis Data :bear:')
